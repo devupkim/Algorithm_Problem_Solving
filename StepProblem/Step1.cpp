@@ -32,3 +32,15 @@ int main(){
     std::cin>>a>>b;
     std::cout<<a-b;
 }
+
+// Step 1-5
+// https://www.acmicpc.net/problem/10998
+#include<iostream>
+int main(){
+    int a,b;
+    std::cin>>a>>b;
+    std::cout<<a*b;
+}
+
+
+
