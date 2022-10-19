@@ -42,5 +42,7 @@ int main(){
     std::cout<<a*b;
 }
 
+// Step 1-6
+// https://www.acmicpc.net/problem/1008
 
 
