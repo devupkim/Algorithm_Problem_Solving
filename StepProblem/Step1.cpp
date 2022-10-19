@@ -44,5 +44,11 @@ int main(){
 
 // Step 1-6
 // https://www.acmicpc.net/problem/1008
-
-
+#include<iostream>
+int main(){
+    double a,b,c;
+    std::cin>>a>>b;
+    std::cout<<std::fixed;//소숫점 아래부터 유효숫자 세기
+    std::cout.precision(9);//유효숫자 9개로 지정하겠다(제시된 유효숫자가 소숫점아래 10^-9까지이므로)
+    std::cout<<a/b;
+}
