@@ -52,3 +52,18 @@ int main(){
     std::cout.precision(9);//유효숫자 9개로 지정하겠다(제시된 유효숫자가 소숫점아래 10^-9까지이므로)
     std::cout<<a/b;
 }
+
+// Step 1-7
+// https://www.acmicpc.net/problem/10869
+#include <iostream>
+
+int main(){
+    int a,b;
+    std::cin>>a>>b;
+    std::cout<<a+b<<std::endl;
+    std::cout<<a-b<<std::endl;
+    std::cout<<a*b<<std::endl;
+    std::cout<<a/b<<std::endl;
+    std::cout<<a%b<<std::endl;
+    return 0;
+}
