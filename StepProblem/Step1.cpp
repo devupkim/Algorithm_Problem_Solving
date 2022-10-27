@@ -79,3 +79,14 @@ int main(){
     std::cout<<str<<"??!";
     return 0;
 }
+
+// Step 1-8
+// https://www.acmicpc.net/problem/18108
+#include<iostream>
+
+int main(){
+    int x;
+    std::cin>>x;
+    std::cout<<x-543;
+    return 0;
+}
