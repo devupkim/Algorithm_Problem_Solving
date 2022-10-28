@@ -142,3 +142,11 @@ int main(){
         std::cout<<"|\\_/|\n"<<"|q p|   /}\n"<<"( 0 )\"\"\"\\\n"<<"|\"^\"`    |\n"<<"||_/=\\"<<"\\__|";
         return 0;
 }
+
+// Step 1-14
+// https://www.acmicpc.net/problem/25083
+#include<iostream>
+int main(){
+        std::cout<<"         ,r\'\"7\n"<<"r`-_   ,\'  ,/\n"<<" \\. \". L_r\'\n"<<"   `~\\/\n"<<"      |\n"<<"      |";
+        return 0;
+}
