@@ -90,3 +90,18 @@ int main(){
     std::cout<<x-543;
     return 0;
 }
+
+// Step 1-9
+// https://www.acmicpc.net/problem/3003
+#include <iostream>
+int main(){
+    int a,b,c,d,e,f;
+    std::cin>>a>>b>>c>>d>>e>>f;
+    std::cout<<1-a<<" ";
+    std::cout<<1-b<<" ";
+    std::cout<<2-c<<" ";
+    std::cout<<2-d<<" ";
+    std::cout<<2-e<<" ";
+    std::cout<<8-f;
+    return 0;
+}
