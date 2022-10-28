@@ -126,3 +126,11 @@ int main(){
         std::cout<<(b%10)*a<<"\n"<<((b%100)-(b%10))*a/10<<"\n"<<((b-(b%100)))*a/100<<"\n"<<a*b;
         return 0;
 }
+
+// Step 1-12
+// https://www.acmicpc.net/problem/10171
+#include <iostream>
+int main(){
+        std::cout<<"\\    /\\\n"<<" )  ( \')\n"<<"(  /  )\n"<<" \\(__)|";
+        return 0;
+}
