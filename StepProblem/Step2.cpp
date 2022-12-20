@@ -54,7 +54,23 @@ int main(){
 }
 
 // Step2-4
+// https://www.acmicpc.net/problem/14681
+#include<iostream>
+using namespace std;
 
+int main(){
+    int a,b;
+    cin>>a;
+    cin>>b;
+    if(a>0){
+        if(b>0) cout<<"1"<<endl;
+        else cout<<"4"<<endl;
+    }
+    else{
+         if(b>0) cout<<"2"<<endl;
+         else cout<<"3"<<endl;
+    }
+}
 
 // Step2-5
 
