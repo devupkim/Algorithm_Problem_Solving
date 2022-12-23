@@ -70,7 +70,7 @@ int main(){
          if(b>0) cout<<"2"<<endl;
          else cout<<"3"<<endl;
     }
-    return 0;
+    return 0; 
 }
 
 // Step2-5
