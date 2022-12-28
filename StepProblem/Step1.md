@@ -1,49 +1,54 @@
-// Backjoon Step Problem Solving
-// Step1: 입출력과 사칙연산
+# Backjoon Step Problem Solving
+## Step1: 입출력과 사칙연산
 
-// Step1-1
-//https://www.acmicpc.net/problem/2557
+### [Step1-1](https://www.acmicpc.net/problem/2557)
+```c++
 #include <iostream>
 int main() {
     std::cout<<"Hello World!";
 }
+```
 
-// Step1-2 //Erased
-//https://www.acmicpc.net/problem/10718
+### [Step1-2 //Erased](https://www.acmicpc.net/problem/10718)
+```c++
 #include<iostream>
 int main(){
     std::cout<<"강한친구 대한육군\n강한친구 대한육군";
 }
+```
 
-// Step 1-2
-//https://www.acmicpc.net/problem/1000
+### [Step 1-2](https://www.acmicpc.net/problem/1000)
+```c++
 #include<iostream>
 int main(){
     int a,b;
     std::cin>>a>>b;
     std::cout<<a+b;
 }
+```
 
-// Step 1-3
-//https://www.acmicpc.net/problem/1001
+### [Step 1-3](https://www.acmicpc.net/problem/1001)
+```c++
 #include<iostream>
 int main(){
     int a,b;
     std::cin>>a>>b;
     std::cout<<a-b;
 }
+```
 
-// Step 1-4
-// https://www.acmicpc.net/problem/10998
+### [Step 1-4](https://www.acmicpc.net/problem/10998)
+```c++
 #include<iostream>
 int main(){
     int a,b;
     std::cin>>a>>b;
     std::cout<<a*b;
 }
+```
 
-// Step 1-5
-// https://www.acmicpc.net/problem/1008
+### [Step 1-5](https://www.acmicpc.net/problem/1008)
+```c++
 #include<iostream>
 int main(){
     double a,b,c;
@@ -52,11 +57,11 @@ int main(){
     std::cout.precision(9);//유효숫자 9개로 지정하겠다(제시된 유효숫자가 소숫점아래 10^-9까지이므로)
     std::cout<<a/b;
 }
+```
 
-// Step 1-6
-// https://www.acmicpc.net/problem/10869
+### [Step 1-6](https://www.acmicpc.net/problem/10869)
+```c++
 #include <iostream>
-
 int main(){
     int a,b;
     std::cin>>a>>b;
@@ -67,9 +72,10 @@ int main(){
     std::cout<<a%b<<std::endl;
     return 0;
 }
+```
 
-// Step 1-7
-// https://www.acmicpc.net/problem/10926
+### [Step 1-7](https://www.acmicpc.net/problem/10926)
+```c++
 #include <iostream>
 #include <string>
 
@@ -79,20 +85,21 @@ int main(){
     std::cout<<str<<"??!";
     return 0;
 }
+```
 
-// Step 1-8
-// https://www.acmicpc.net/problem/18108
+### [Step 1-8](https://www.acmicpc.net/problem/18108)
+```c++
 #include<iostream>
-
 int main(){
     int x;
     std::cin>>x;
     std::cout<<x-543;
     return 0;
 }
+```
 
-// Step 1-9
-// https://www.acmicpc.net/problem/3003
+### [Step 1-9](https://www.acmicpc.net/problem/3003)
+```c++
 #include <iostream>
 int main(){
     int a,b,c,d,e,f;
@@ -105,9 +112,10 @@ int main(){
     std::cout<<8-f;
     return 0;
 }
+```
 
-// Step 1-10
-// https://www.acmicpc.net/problem/10430
+### [Step 1-10](https://www.acmicpc.net/problem/10430)
+```c++
 #include <iostream>
 int main(){
     int a,b,c;
@@ -115,9 +123,10 @@ int main(){
     std::cout<<(a+b)%c<<"\n"<<((a%c)+(b%c))%c<<"\n"<<(a*b)%c<<"\n"<<((a%c)*(b%c))%c;
     return 0;
 }
+```
 
-// Step 1-11
-// https://www.acmicpc.net/problem/2588
+### [Step 1-11](https://www.acmicpc.net/problem/2588)
+```c++
 #include <iostream>
 int main(){
         int a,b;
@@ -126,27 +135,31 @@ int main(){
         std::cout<<(b%10)*a<<"\n"<<((b%100)-(b%10))*a/10<<"\n"<<((b-(b%100)))*a/100<<"\n"<<a*b;
         return 0;
 }
+```
 
-// Step 1-12
-// https://www.acmicpc.net/problem/10171
+### [Step 1-12](https://www.acmicpc.net/problem/10171)
+```c++
 #include <iostream>
 int main(){
         std::cout<<"\\    /\\\n"<<" )  ( \')\n"<<"(  /  )\n"<<" \\(__)|";
         return 0;
 }
+```
 
-// Step 1-13
-// https://www.acmicpc.net/problem/10172
+### [Step 1-13](https://www.acmicpc.net/problem/10172)
+```c++
 #include <iostream>
 int main(){
         std::cout<<"|\\_/|\n"<<"|q p|   /}\n"<<"( 0 )\"\"\"\\\n"<<"|\"^\"`    |\n"<<"||_/=\\"<<"\\__|";
         return 0;
 }
+```
 
-// Step 1-14
-// https://www.acmicpc.net/problem/25083
+### [Step 1-14](https://www.acmicpc.net/problem/25083)
+```c++
 #include<iostream>
 int main(){
         std::cout<<"         ,r\'\"7\n"<<"r`-_   ,\'  ,/\n"<<" \\. \". L_r\'\n"<<"   `~\\/\n"<<"      |\n"<<"      |";
         return 0;
 }
+```
