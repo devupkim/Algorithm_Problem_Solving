@@ -12,11 +12,11 @@ int main() {
 
     int n;
     cin >> n;
-    int nums[n];
+    vector<int> v(n);
     for (int i = 0; i < n; i++) {
-        cin >> nums[i];
+        cin >> v[i];
     }
-    pair<int *, int *> MinMaxVal = minmax_element(&nums[0], &nums[n]);
-    cout << *MinMaxVal.first << " " << *MinMaxVal.second;
+
+    cout << *min_element(v.begin(), v.end()) << " " << *max_element(v.begin(), v.end());
     return 0;
 }
