@@ -13,20 +13,15 @@ int main() {
     ll a, b;
     cin >> a >> b;
 
-    if (a == b) {
-        cout << 0;
+    if (a > b) swap(a, b);
+    if (b - a < 2) {
+        cout << "0";
         cout << "";
-    } else if (a > b) {
-        cout << a - b - 1;
-        cout << "\n";
-        for (int i = b + 1; i < a; i++) {
-            cout << i << " ";
-        }
     } else {
-        cout << b - a - 1;
-        cout << "\n";
-        for (int i = a + 1; i < b; i++) {
-            cout << i << " ";
+        int i = b - a;
+        cout << i - 1 << "\n";
+        while (--i) {
+            cout << b - i << " ";
         }
     }
 }
