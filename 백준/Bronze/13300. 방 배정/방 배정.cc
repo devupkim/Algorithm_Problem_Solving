@@ -20,14 +20,11 @@ int main() {
         a[gender][year]++;
     }
 
-    int res = 12;
+    int res = 0;
     for (int i = 0; i < 2; i++) {
-        for (int j = 1; j < 7; j++) {
-            if (a[i][j] == 0) {
-                res--;
-            } else if (a[i][j] > k) {
-                res += a[i][j] / k;
-            }
+        for (int j = 1; j <= 6; j++) {
+            res += a[i][j] / k;
+            if (a[i][j] % k) res++;
         }
     }
     cout << res;
