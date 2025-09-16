@@ -10,15 +10,10 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int n, x;
+    int n, x, i;
     cin >> n >> x;
-    for (int i = 0; i < n; i++) {
-        int k;
-        cin >> k;
-        if (k < x) {
-            cout << k << " ";
-        }
+    while (n--) {
+        cin >> i;
+        if (i < x) cout << i << " ";
     }
-
-    return 0;
 }
