@@ -2,25 +2,23 @@
 
 #include <bits/stdc++.h>
 
-#define endl "\n"
+#define endl '\n'
 #define ll long long
 using namespace std;
 
-int a[26];
-
-int main() {
+int main()
+{
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-
-    string s;
-
-    cin >> s;
-
-    for (auto i: s) {
-        a[i - int('a')] ++;
+    int arr['z'-'a'+1]={0,};
+    string s; cin >> s;
+    
+    for(char &i: s){
+        arr[i-'a']++;
     }
-    for (auto i: a) {
-        cout << i << " ";
+    
+    for(int &i: arr){
+        cout << i <<" ";
     }
-    return 0;
 }
+
