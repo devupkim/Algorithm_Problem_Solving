@@ -6,32 +6,42 @@
 #define ll long long
 using namespace std;
 
-int main() {
+enum RESULT
+{
+    D,C,B,A,E
+};
+
+
+int main()
+{
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int n = 3;
-    while (n--) {
-        int a, b, c, d;
-        cin >> a >> b >> c >> d;
-        vector<int> v = {a, b, c, d};
-        int p = count(v.begin(), v.end(), 0);
+    int n=3;
 
-        switch (p) {
-            case 0:
-                cout << "E" << endl;
-                break;
-            case 1:
-                cout << "A" << endl;
-                break;
-            case 2:
-                cout << "B" << endl;
-                break;
-            case 3:
-                cout << "C" << endl;
-                break;
-            case 4:
-                cout << "D" << endl;
-                break;
+    while (n--)
+    {
+        int a, b, c, d;
+        cin >> a>>b>>c>>d;
+        switch (static_cast<RESULT>(a+b+c+d))
+        {
+        case A:
+            cout << "A\n";
+            break;
+        case B:
+            cout << "B\n";
+            break;
+        case C:
+            cout << "C\n";
+            break;
+        case D:
+            cout << "D\n";
+            break;
+        case E:
+            cout << "E\n";
+            break;
         }
+
     }
+
+
 }
