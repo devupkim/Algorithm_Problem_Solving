@@ -7,25 +7,19 @@
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
+
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
     int n;
     cin >> n;
-    int yong = 0, min = 0;
-
-    int a;
-    for (int i = 0; i < n; i++) {
-        cin >> a;
-        yong += (a / 30 + 1) * 10;
-        min += (a / 60 + 1) * 15;
+    vector<int> v(n);
+    int y = 0, m = 0;
+    for (auto &i: v) {
+        cin >> i;
+        y += (i / 30 + 1) * 10;
+        m += (i / 60 + 1) * 15;
     }
 
-    if (min < yong) {
-        cout << "M" << " " << min;
-    } else if (yong < min) {
-        cout << "Y" << " " << yong;
-    } else {
-        cout << "Y" << " " << "M" << " " << yong;
-    }
+    cout << (y <= m ? "Y " : "") << (m <= y ? "M " : "") << (m <= y ? m : y);
 }
