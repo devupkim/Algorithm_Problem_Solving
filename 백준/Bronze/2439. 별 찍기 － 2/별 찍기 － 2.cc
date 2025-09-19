@@ -7,23 +7,19 @@
 using namespace std;
 
 int main() {
+
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
     int n;
     cin >> n;
-
     for (int i = 1; i <= n; i++) {
-        int j = n - i;
-        int k = i;
-        for (; j > 0; j--) {
+        for (int j = n - i; j > 0; j--) {
             cout << " ";
         }
-        for (; k > 0; k--) {
+        for (int j = 1; j <= i; j++) {
             cout << "*";
         }
-        cout << endl;
+        cout << "\n";
     }
-
-    return 0;
 }
