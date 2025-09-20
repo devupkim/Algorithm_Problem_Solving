@@ -6,26 +6,25 @@
 #define ll long long
 using namespace std;
 
-int arr[10];
+int s[10];
 
 int main() {
+
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    string n;
-    int max = 0;
-    int cnt = 0;
-
+    int n;
     cin >> n;
-
-    for (auto i: n) {
-        if (i == '6' || i == '9') cnt++;
-        else {
-            if (++arr[i - '0'] > max) max = arr[i - '0'];
-        }
+    while (n > 0) {
+        s[n % 10]++;
+        n /= 10;
     }
-    if (cnt > max * 2) {
-        max = cnt / 2 + cnt % 2;
+
+    s[6] = s[9] = (s[6] + s[9] + 1) / 2;
+    int max = 0;
+    for (auto &i: s) {
+        if (max < i) max = i;
     }
     cout << max;
+
 }
