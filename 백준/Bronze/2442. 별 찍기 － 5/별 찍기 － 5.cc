@@ -1,0 +1,22 @@
+#pragma GCC optimize("O3")
+
+#include <bits/stdc++.h>
+
+#define endl "\n"
+#define ll long long
+
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
+    int n;
+    cin >> n;
+
+    for (int i = 1; i <= n; i++) {
+        for (int k = n - i; k > 0; k--) cout << " ";
+        for (int k = 1; k <= 2 * i - 1; k++) cout << "*";
+        cout << endl;
+    }
+}
