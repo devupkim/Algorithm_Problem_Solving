@@ -4,19 +4,24 @@
 
 #define endl "\n"
 #define ll long long
+
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+    ios::sync_with_stdio(0);
+    cin.tie(0);
 
-    vector<int> v(9);
-    for (int i = 0; i < 9; i++) {
-        cin >> v[i];
+    int n = 0;
+    int max = 0;
+
+    for (int i = 1; i <= 9; i++) {
+        int k;
+        cin >> k;
+        if (k > max) {
+            max = k;
+            n = i;
+        }
     }
-    int max = *max_element(v.begin(), v.end());
-    int max_index = max_element(v.begin(), v.end()) - v.begin()+1;
-    cout << max << endl << max_index;
 
-    return 0;
+    cout << max << "\n" << n;
 }
